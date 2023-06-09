@@ -1,4 +1,4 @@
-package org.ars.example.synchronization;
+package org.ars.example.concurrent.synchronization;
 
 //In this example we have used synchronized keyword on the static method to perform static synchronization.
 public class TestSynchronization4 {

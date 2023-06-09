@@ -1,9 +1,9 @@
-package org.ars.example.synchronization;
+package org.ars.example.concurrent.synchronization;
 
-public class TestSynchronization1 {
-
+public class TestSynchronization2 {
+    // example of java synchronized method
     static class Table {
-        void printTable( int n) {// method not synchronized
+        synchronized void printTable( int n) {// synchronized method
             for( int i = 1; i <= 5; i++) {
                 System.out.println( n * i);
                 try {

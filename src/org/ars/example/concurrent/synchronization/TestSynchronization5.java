@@ -1,4 +1,4 @@
-package org.ars.example.synchronization;
+package org.ars.example.concurrent.synchronization;
 
 //In this example, we are using anonymous class to create the threads.
 public class TestSynchronization5 {

@@ -1,4 +1,4 @@
-package org.ars.example.synchronization;
+package org.ars.example.concurrent.synchronization;
 
 public class SynchronizationStatic1 {
 
