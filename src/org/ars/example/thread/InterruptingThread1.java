@@ -18,7 +18,7 @@ public class InterruptingThread1 extends Thread {
         try {
             t1.interrupt();
         } catch( Exception e) {
-            System.out.println( "Exception handled " + e); // TODO: not clear why not handle Runtime Exception
+            System.out.println( "Exception handled " + e); // exceptions are local to a thread, and main thread doesn't actually see the run method
         }
     }
 

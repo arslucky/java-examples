@@ -1,6 +1,6 @@
 package org.ars.example.exception;
 
-public class ExceptioReturn {
+public class ExceptionReturn {
 
     void finnally() {
         try {
@@ -33,7 +33,7 @@ public class ExceptioReturn {
 
     public static void main( String[] args) {
         try {
-            ExceptioReturn exc = new ExceptioReturn();
+            ExceptionReturn exc = new ExceptionReturn();
             System.out.println( "get:" + exc.get());
             exc.finnally();
         } catch( Exception e) {
