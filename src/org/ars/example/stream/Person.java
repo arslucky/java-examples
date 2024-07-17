@@ -3,12 +3,16 @@ package org.ars.example.stream;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.apache.commons.lang3.StringUtils;
 
 /**
  * @author arsen.ibragimov
  *
  */
+@Getter
+@Setter
 public class Person {
 
     static Collection<Person> persons = new ArrayList<>();
@@ -21,6 +25,7 @@ public class Person {
         persons.add( new Person( "Laura", "Lopes", 14));
         persons.add( new Person( "Nick", "Brown", 88));
         persons.add( new Person( "Edward", "Routh", 22));
+        persons.add( new Person( "Jack", "Nickolson", 20));
     }
 
     private String name;
@@ -33,31 +38,6 @@ public class Person {
         this.family = family;
         this.age = age;
     }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName( String name) {
-        this.name = name;
-    }
-
-    public String getFamily() {
-        return family;
-    }
-
-    public void setFamily( String family) {
-        this.family = family;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge( Integer age) {
-        this.age = age;
-    }
-
     @Override
     public String toString() {
         return "Person [name=" + StringUtils.rightPad( name, 7) + ", family=" + StringUtils.rightPad( family, 10) + ", age=" + age + "]";
